@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>signup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    }
+    .container
+    {
+    width:370px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    h1 {
+    text-align: center;
+    font-weight: lighter;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    }
+    .SignUp-div
+    {
+    height:100vh;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    .SignUp {
+    width:350px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    h2 {
+    text-align: center;
+    color:white;
+    font-family:Math Sans;
+    margin-bottom: 5px;
+    }
+    .SignUp label {
+    display: block;
+    margin-bottom: 8px;
+    }
+    input {
+    width: 70%;
+    padding: 25px;
+    color:white;
+    font-family:Arial;
+    background-color:#000;
+    font-size: medium;
+    font-weight: lighter;
+    border: 1px solid white;
+    border-radius: 19px;
+    margin-top:25px;
+    }
+    input:focus{
+    outline: none;
+    }
+    .SignUp button {
+    margin-top:40px;
+    display: block;
+    width: 80%;
+    font-size: large;
+    padding: 23px;
+    font-weight:bold;
+    background-color:rgb(127, 203, 14);
+    color: #fff;
+    border: none;
+    border-radius: 23px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    }
+    .SignUp button:hover {
+    background-color: rgb(84, 130, 16);
+    font-weight:bold;
+    }
+    p{
+    font-size: large;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 7%;
+    }
+    a{
+    font-size: large;
+    margin-top: 14px;
+    color: greenyellow;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+</style>
+
+<body>
+<div class="SignUp-div">
+    <div class=container>
+        <h1>Sign up</h1>
+        <form class="SignUp" action="" method="post">
+            <input
+                    name="firstname"
+                    type="text"
+                    placeholder="First Name"
+                    required
+            />
+
+            <input
+                    name="lastname"
+                    type="text"
+                    placeholder="Last Name"
+                    required
+            />
+            <input
+                    name="email"
+                    type="email"
+                    placeholder="Email"
+                    required
+            />
+
+            <input
+                    name="password"
+                    type="password"
+                    placeholder="Password"
+                    required
+            />
+
+            <p>Already have an account?</p>
+            <a href="" >
+                Login
+            </a>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
